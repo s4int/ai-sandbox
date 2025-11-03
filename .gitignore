@@ -138,6 +138,9 @@ dmypy.json
 # IntelliJ
 out/
 
+# VS Code workspace files
+*.code-workspace
+
 .DS_Store
 Thumbs.db
 
