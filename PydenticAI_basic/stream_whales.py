@@ -49,6 +49,7 @@ ollama_model = OpenAIChatModel(
 agent = Agent(
     ollama_model,
     output_type=list[Whale],
+    retries=3,
     )
 
 
