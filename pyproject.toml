@@ -16,9 +16,10 @@ dev = [
 ]
 
 [tool.ruff]
-# Set the maximum line length
-line-length = 88
-
+# Ruff configuration
+line-length = 120
+fix = true
+show-fixes = true
 # Target Python 3.13
 target-version = "py313"
 
