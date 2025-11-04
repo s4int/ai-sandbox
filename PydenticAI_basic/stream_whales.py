@@ -9,7 +9,7 @@ Run with:
 """
 
 import asyncio
-from typing import Annotated
+from typing import Annotated, NotRequired
 
 import logfire
 from pydantic import Field
@@ -19,7 +19,7 @@ from pydantic_ai.providers.ollama import OllamaProvider
 from rich.console import Console
 from rich.live import Live
 from rich.table import Table
-from typing_extensions import NotRequired, TypedDict
+from typing_extensions import TypedDict
 
 # 'if-token-present' means nothing will be sent (and the example will work) if you don't have logfire configured
 logfire.configure(send_to_logfire='if-token-present')
