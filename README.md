@@ -9,13 +9,13 @@ Scratching the surface of Agentic AI
 
 ## Setup Instructions for macOS
 
-### 1. Install Homebrew (if not already installed)
+### Install Homebrew (if not already installed)
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### 2. Install Ollama
+### Install Ollama
 
 Ollama provides local LLM capabilities for the project.
 
@@ -32,7 +32,9 @@ ollama serve
 In a new terminal, pull a model (e.g., llama3.1:8b):
 
 ```bash
+ollama pull llama3:8b
 ollama pull llama3.1:8b
+ollama pull gpt-oss:20b
 ```
 
 You can verify the installation:
@@ -41,7 +43,7 @@ You can verify the installation:
 ollama list
 ```
 
-### 3. Install uv
+### Install uv
 
 uv is a fast Python package installer and resolver.
 
@@ -55,7 +57,7 @@ Verify the installation:
 uv --version
 ```
 
-### 4. Clone and Setup the Project
+### Clone and Setup the Project
 
 Clone the repository (if you haven't already):
 
@@ -75,7 +77,7 @@ This will:
 - Install all dependencies from `pyproject.toml`
 - Lock dependencies in `uv.lock`
 
-### 5. Run the Project
+### Run the Project
 
 
 Run with development tools (e.g., linting):
