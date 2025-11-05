@@ -24,6 +24,7 @@ ollama_model = OpenAIChatModel(
     model_name='llama3.1:8b', # tools
     # model_name='gpt-oss:20b', # tools, thinking
     provider=OllamaProvider(base_url='http://localhost:11434/v1'),
+    settings=ModelSettings(temperature=0.7, max_tokens=1000),
 )
 
 agent = Agent(
