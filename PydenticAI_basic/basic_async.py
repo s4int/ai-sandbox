@@ -8,7 +8,7 @@ Run with:
 import asyncio
 
 from pydantic import BaseModel
-from pydantic_ai import Agent
+from pydantic_ai import Agent, ModelSettings
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.ollama import OllamaProvider
 from rich import print
@@ -44,6 +44,4 @@ async def main():
     print(f"Usage:\n{result.usage()}")
 
 if __name__ == '__main__':
-    import asyncio
-
     asyncio.run(main())
