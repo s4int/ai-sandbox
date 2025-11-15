@@ -35,6 +35,7 @@ In a new terminal, pull a model (e.g., llama3.1:8b):
 ollama pull llama3:8b
 ollama pull llama3.1:8b
 ollama pull gpt-oss:20b
+ollama pull qwen3:14b
 ```
 
 You can verify the installation:
