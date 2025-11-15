@@ -231,7 +231,7 @@ class ChatApp(App):
                 message_history=self.message_history,
                 ) as result:
 
-                async for resp, is_last in result.stream_responses(debounce_by=0.01):
+                async for resp, _ in result.stream_responses(debounce_by=0.01):
                     for part in resp.parts:
                         if part.part_kind == "thinking":
                             chat.add_message('system', "thinking: "+part.content)
